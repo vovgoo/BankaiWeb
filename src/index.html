@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./magic.css">
+  <title>Bankai</title>
+</head>
+
+<body>
+
+  <div
+    class="placeholder w-full h-full bg-black absolute z-50 text-white flex justify-center items-center font-semibold text-3xl overflow-hidden">
+    <div class="absolute blur-max left-0 -top-96 h-full w-48 rotate-45 bg-purple-700 opacity-40"></div>
+    <div class="absolute blur-max right-0 -bottom-96 h-full w-48 rotate-45 bg-purple-700 opacity-40"></div>
+    <div class="flex flex-col items-center justify-center">
+      <p class="mb-10 magictime vanishIn shadow-lg glow">vovgoo dev.</p>
+      <span class="loader-17"></span>
+    </div>
+  </div>
+
+  <div class="fixed h-full w-full border-black bg-main-color z-50 flex flex-col items-center font-montserrat xl:hidden " id="mobile-menu">
+    <div class="flex justify-between items-center w-4/5 h-24">
+      <div class="flex justify-start items-center h-full w-1/6 cursor-pointer">
+        <div
+          class="text-4xl font-bold justify-center items-center flex rounded-full h-16 w-16 min-w-16 text-white mr-2 bg-black">
+          B</div>
+        <div class="text-2xl font-semibold"> Bankai</div>
+      </div>
+      
+      <i class="fa-solid fa-bars text-3xl" id="burger-icon-1"></i>
+    </div>
+
+    <div class="flex justify-center items-center w-full">
+      <nav class="w-full">
+        <ul class="flex flex-col justify-center items-center">
+          <li class="xl:hidden text-xl font-semibold cursor-pointer h-16 flex justify-center items-center bg-black w-full text-white">Home</li>
+          <li
+            class="xl:hidden text-xl text-slate-400 font-semibold cursor-pointer transition-all duration-300 h-16 flex justify-center items-center hover:bg-black hover:text-white w-full">
+            About Us
+          </li>
+          <li
+            class="xl:hidden text-xl text-slate-400 font-semibold cursor-pointer transition-all duration-300 h-16 flex justify-center items-center hover:bg-black hover:text-white w-full">
+            Why
+            Bankai</li>
+            <li
+            class="xl:hidden text-xl text-slate-400 font-semibold cursor-pointer transition-all duration-300 h-16 flex justify-center items-center hover:bg-black hover:text-white w-full">
+            Contact
+            Us</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="content bg-main-color hidden flex-col items-center font-montserrat">
+    <header class="h-24 w-4/5 flex justify-between items-center">
+      <div class="flex justify-start items-center h-full w-1/6 cursor-pointer">
+        <div
+          class="text-4xl font-bold justify-center items-center flex rounded-full h-16 w-16 min-w-16 text-white mr-2 bg-black">
+          B</div>
+        <div class="text-2xl font-semibold"> Bankai</div>
+      </div>
+      <div class="flex justify-center items-center  ">
+        <nav>
+          <ul class="flex justify-center items-center">
+            <li class="max-xl:hidden mr-16 text-xl font-semibold cursor-pointer">Home</li>
+            <li
+              class="max-xl:hidden mr-16 text-xl text-slate-400 hover:text-black font-semibold cursor-pointer transition-all duration-300">
+              About Us
+            </li>
+            <li
+              class="max-xl:hidden mr-16 text-xl text-slate-400 hover:text-black font-semibold cursor-pointer transition-all duration-300">
+              Why
+              Bankai</li>
+            <li
+              class="max-xl:hidden bg-black py-2 px-4 rounded-md text-xl text-white cursor-pointer transition-all duration-300 hover:bg-white hover:text-black border-4 border-black">
+              Contact Us</li>
+
+            <li class="xl:hidden" id="burger-icon"><i class="fa-solid fa-bars text-3xl"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      class="h-screen max-xl:h-screen-70 w-4/5 flex relative min-h-screens max-md:flex-col max-md:min-h-scene-1-md max-md:max-h-scene-1-md max-sm:max-h-scene-1-sm max-sm:min-h-scene-1-sm max-sm:mt-20">
+      <div
+        class="h-full w-1/2 flex flex-col justify-center text-left max-md:w-full max-md:items-center max-md:text-center">
+        <div class="font-semibold text-7xl max-xl:text-6xl leading-50 max-sm:text-3xl" id="main-text-container">
+          <p class="bg-gradient-to-r from-black bg-slate-500 inline-block text-transparent bg-clip-text w-full"
+            id="typed">
+
+          </p>
+        </div>
+        <div class="text-slate-400 text-xl mt-10 max-sm:text-lg">
+          With personal financial management tools and instant application
+          for products, banking is now brilliant on the SC Mobile App.
+        </div>
+        <div class="flex mt-10 max-sm:flex-col">
+          <img src="./image/apple.png" class="h-16 cursor-pointer mr-5 max-sm:h-12 max-sm:mr-0 max-sm:mb-5">
+          <img src="./image/google.png" class="h-16 cursor-pointer max-sm:h-12">
+        </div>
+        <div class="mt-10 flex">
+          <div class="font-semibold text-7xl w-rating" id="rating-counter">
+            0
+          </div>
+          <div class="flex flex-col ml-4 justify-around">
+            <div class="flex justify-between stars">
+              <i class="fa-solid fa-star text-amber-400 transition-all duration-500 opacity-0"></i>
+              <i class="fa-solid fa-star text-amber-400 transition-all duration-500 opacity-0"></i>
+              <i class="fa-solid fa-star text-amber-400 transition-all duration-500 opacity-0"></i>
+              <i class="fa-solid fa-star text-amber-400 transition-all duration-500 opacity-0"></i>
+              <i class="fa-solid fa-star-half-stroke text-amber-400 transition-all duration-500 opacity-0"></i>
+            </div>
+            <div class="text-slate-400">
+              990+ Reviews
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-full w-1/2 flex items-center relative max-md:justify-center max-md:items-center max-md:w-full">
+        <img src="./image/file.png" class="absolute left-40 w-full max-md:left-0 max-md:w-2/3 max-md:static opacity-0"
+          id="main-image">
+      </div>
+
+    </div>
+
+    <div
+      class="h-screen-120 max-xl:h-screen-70 max-lg:min-h-scene-2-lg max-lg:mb-60 w-4/5 min-h-screens max-h-scene-2 max-md:mb-0 scene-1">
+      <div
+        class="max-h-bg-cards relative w-full max-xl:h-full max-lg:max-h-full h-5/6 bg-vhs-effect bg-cover bg-no-repeat bg-center rounded-3xl flex flex-col items-center scene-1-item top-96">
+        <div class="w-11/12 h-1/3 flex justify-between max-lg: max-h-text-bg-cards max-sm:flex-col">
+          <div
+            class="leading-35 text-white text-5xl max-xl:text-4xl font-semibold w-1/2 flex items-center justify-center max-sm:w-full max-sm:text-center max-sm:mt-5">
+            Safe & Convenient Transaction
+          </div>
+          <div
+            class="text-white w-2/3 flex items-center justify-end xl:w-2/6 max-sm:w-full max-sm:text-center max-sm:mb-5">
+            Want to pay anything so ease with the touch
+            of a finger through duwit, you can make practically
+            any transaction
+          </div>
+        </div>
+        <div class="absolute top-64 h-full w-11/12 flex justify-between max-lg:flex-col max-lg:justify-normal">
+
+          <div
+            class="min-h-cards max-h-cards relative shadow-lg w-1/3 max-lg:w-full max-lg:mb-10 bg-white h-full-50 max-xl:h-full rounded-3xl flex flex-col">
+            <div class="flex flex-col w-4/5 ml-5 mt-10">
+              <div class="font-bold text-4xl">
+                Instant, Fee - Free Payment
+              </div>
+              <div class="text-slate-400 text-cards font-medium mt-5">
+                Set up fixed orders in the app to
+                send money to any other bank account
+                instantly and without fees.
+              </div>
+            </div>
+            <div class="bottom-0 right-0 absolute">
+              <img src="image/cards1.png" class="rounded-3xl">
+            </div>
+          </div>
+
+          <div
+            class="min-h-cards max-h-cards relative mx-8 max-lg:mx-0 max-lg:mb-10 shadow-lg w-1/3 max-lg:w-full bg-white h-full-50 rounded-3xl flex flex-col">
+            <div class="flex flex-col w-4/5 ml-5 mt-10">
+              <div class="font-bold text-4xl">
+                Keep Your Cash Flow
+                Clear And Keep
+                Increasing
+              </div>
+              <div class="text-slate-400 text-cards font-medium mt-5">
+                See it al a glance when you link your accounts,
+                credit card, investments, and bills.
+              </div>
+            </div>
+            <div class="bottom-0 right-0 absolute">
+              <img src="image/cards2.png" class="rounded-3xl">
+            </div>
+          </div>
+
+          <div
+            class="min-h-cards max-h-cards relative shadow-lg w-1/3 max-lg:w-full bg-white h-full-50 rounded-3xl flex flex-col justify-end">
+            <div class="top-0 left-0 absolute">
+              <img src="image/cards3.png" class="rounded-3xl">
+            </div>
+            <div class="flex flex-col w-4/5 ml-5 mt-10">
+              <div class="font-bold text-4xl">
+                Instant, Fee - Free Payment
+              </div>
+              <div class="text-slate-400 text-cards font-medium mt-5 mb-16">
+                Set up fixed orders in the app to
+                send money to any other bank account
+                instantly and without fees.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div
+      class="h-screen max-xl:h-screen-70 w-4/5 flex min-h-screens max-h-scene-3 max-lg:mb-60 max-md:flex-col max-md:justify-center max-md:items-center max-md:min-h-scene-1-md max-md:mb-0 scene-2 overflow-hidden">
+      <div
+        class="relative h-full w-1/2 max-md:w-full max-md:justify-center max-md:items-center max-md:flex right-96 scene-2-item-left opacity-0">
+        <img src="./image/scene3.png"
+          class="max-md:w-2/3 absolute right-20 max-xl:top-1/2 max-xl:-translate-y-1/2 max-md:static max-md:right-0 max-md:translate-y-0">
+      </div>
+      <div class="h-full w-1/2 max-md:w-full relative left-96 opacity-0 scene-2-item-right">
+        <div
+          class="text-5.5 font-semibold bg-gradient-to-r leading-35 from-black bg-slate-500 inline-block text-transparent bg-clip-text max-sm:text-4xl max-sm:text-center">
+          4 Quick Steps To Use Our Services
+        </div>
+        <div class="relative flex flex-col w-2/3 h-full ml-3 mt-10 max-md:w-full">
+          <div class="absolute h-scene-3 w-1 border-slate-500 border-l-2 border-dashed -left-1 top-2" id="splash"></div>
+
+          <div class="relative flex flex-col" id="1-step">
+            <div
+              class="absolute w-5 h-5 rounded-full bg-gradient-to-b from-black via-slate-500 to-black -left-3 top-1.5 shadow-inner">
+            </div>
+            <div class="ml-5 text-2xl font-semibold">
+              Download App
+            </div>
+            <div class="ml-5 text-slate-400 text-cards font-medium mt-7 mb-7">
+              First to use bankai you can download
+              the bankai application through the app stoer
+              or google play store
+            </div>
+          </div>
+
+          <div class="relative flex flex-col" id="2-step">
+            <div
+              class="absolute w-5 h-5 rounded-full bg-gradient-to-b from-black via-slate-500 to-black -left-3 top-1.5 shadow-inner">
+            </div>
+            <div class="ml-5 text-2xl font-semibold">
+              Choose Payment
+            </div>
+            <div class="ml-5 text-slate-400 text-cards font-medium mt-7 mb-7">
+              You can choose all types of payments that are
+              arledy integrated with bankai such as using
+              a virtual account of your bank account
+            </div>
+          </div>
+
+          <div class="relative flex flex-col" id="3-step">
+            <div
+              class="absolute w-5 h-5 rounded-full bg-gradient-to-b from-black via-slate-500 to-black -left-3 top-1.5 shadow-inner">
+            </div>
+            <div class="ml-5 text-2xl font-semibold">
+              Make payment
+            </div>
+            <div class="ml-5 text-slate-400 text-cards font-medium mt-7 mb-7">
+              You can make all online transaction using
+              the Bankai application easily and without
+              transfer fees
+            </div>
+          </div>
+
+          <div class="relative flex flex-col" id="4-step">
+            <div
+              class="absolute w-5 h-5 rounded-full bg-gradient-to-b from-black via-slate-500 to-black -left-3 top-1.5 shadow-inner">
+            </div>
+            <div class="ml-5 text-2xl font-semibold">
+              Get Amazing Services
+            </div>
+            <div class="ml-5 text-slate-400 text-cards font-medium mt-7 mb-7">
+              Many application provide 24 hour service
+              to help all your transactions which will
+              by assisted by our CS quickly
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="h-screen w-4/5 flex max-xl:flex-col-reverse max-xl:justify-center max-xl:items-center max-xl:min-h-screens-4 max-h-scene-3 max-lg:mt-52 max-sm:min-h-screens-4-sm scene-3 sm:overflow-hidden">
+      <div
+        class="h-full w-1/2 max-xl:w-full flex flex-col justify-center relative scene-3-item-left sm:right-96 sm:opacity-0">
+        <div
+          class="text-5xl font-semibold bg-gradient-to-r leading-35 from-black bg-slate-500 inline-block text-transparent bg-clip-text max-sm:text-3xl max-sm:text-center">
+          Have Question About Benkai?
+        </div>
+        <div class="mt-10">
+          <div>
+            <div class="flex justify-between items-center mb-7">
+              <div class="text-3xl font-semibold max-sm:text-2xl">What Is Bankai?</div>
+              <div class="text-5xl cursor-pointer transition-all duration-200 toggle-dropdown"><i
+                  class="fa-sharp fa-light fa-plus"></i></div>
+            </div>
+            <div class="hidden text-slate-400 text-cards font-medium text-sm mb-7 dropdown-content">
+              Customer who open an account throught Bankai Registration
+              will be automatically enrolled in Bankai services and will
+              be able to log is uisng their Bankai registration email
+              adress and password
+            </div>
+            <hr>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mt-7 mb-7">
+              <div class="text-3xl font-semibold max-sm:text-2xl">How To Active Bankai Services?</div>
+              <div class="text-5xl cursor-pointer rotate-45 transition-all duration-200 toggle-dropdown"><i
+                  class="fa-sharp fa-light fa-plus"></i></div>
+            </div>
+            <div class="text-slate-400 text-cards font-medium text-sm mb-7 dropdown-content">
+              Customer who open an account throught Bankai Registration
+              will be automatically enrolled in Bankai services and will
+              be able to log is uisng their Bankai registration email
+              adress and password
+            </div>
+            <hr>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mt-7 mb-7">
+              <div class="text-3xl font-semibold max-sm:text-2xl">What Are The Advantages Of Using Bankai?</div>
+              <div class="text-5xl cursor-pointer transition-all duration-200 toggle-dropdown"><i
+                  class="fa-sharp fa-light fa-plus"></i></div>
+            </div>
+            <div class="hidden text-slate-400 text-cards font-medium text-sm mb-7 dropdown-content">
+              Customer who open an account throught Bankai Registration
+              will be automatically enrolled in Bankai services and will
+              be able to log is uisng their Bankai registration email
+              adress and password
+            </div>
+            <hr>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mt-7 mb-7">
+              <div class="text-3xl font-semibold max-sm:text-2xl">How To Do Transaction Using Bankai?</div>
+              <div class="text-5xl cursor-pointer transition-all duration-200 toggle-dropdown"><i
+                  class="fa-sharp fa-light fa-plus"></i></div>
+            </div>
+            <div class="hidden text-slate-400 text-cards font-medium text-sm mb-7 dropdown-content">
+              Customer who open an account throught Bankai Registration
+              will be automatically enrolled in Bankai services and will
+              be able to log is uisng their Bankai registration email
+              adress and password
+            </div>
+            <hr>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mt-7 mb-7">
+              <div class="text-3xl font-semibold max-sm:text-2xl">Who Is Eligible To Open Bankai Account?</div>
+              <div class="text-5xl cursor-pointer transition-all duration-200 toggle-dropdown"><i
+                  class="fa-sharp fa-light fa-plus"></i></div>
+            </div>
+            <div class="hidden text-slate-400 text-cards font-medium text-sm mb-7 dropdown-content">
+              Customer who open an account throught Bankai Registration
+              will be automatically enrolled in Bankai services and will
+              be able to log is uisng their Bankai registration email
+              adress and password
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-full w-2/3 max-lg:w-full flex justify-center items-end max-xl:5/6 max-lg:mb-32 sm:left-96 relative sm:opacity-0 scene-3-item-right">
+        <div
+          class="relative bg-vhs-effect w-3/4 h-scene-4-1 bg-no-repeat bg-cover bg-right rounded-3xl flex items-center justify-end flex-col max-xl:w-full max-md:h-image-scene4-md max-sm:h-scene-4-sm">
+          <img src="./image/scene4-1.png"
+            class="h-4/6 absolute -top-52 shadow-image-scene-4-1 rounded-2xl max-md:h-3/6 max-md:-top-32 max-sm:h-image-sm">
+          <img src="./image/scene4-2.png" class="h-image-scene-4 mb-5 max-md:h-image-md max-sm:h-image-sm">
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="h-screen max-xl:max-h-bg-cards max-xl:mb-60 w-4/5 flex items-center mt-32 max-h-scene-3 max-lg:max-h-scene-3 max-md:mb-16 max-sm:mt-30 max-sm:min-h-screen-last-sm scene-4">
+      <div
+        class="relative w-full h-2/3 max-lg:h-full bg-vhs-effect bg-no-repeat bg-cover bg-center rounded-3xl flex z-0 max-lg:flex-col max-lg:justify-center max-lg:items-center max-sm:h-4/5">
+        <div class="h-full w-full bg-black absolute rounded-3xl opacity-20 z-10"></div>
+        <div class="relative h-full w-1/2 max-sm:h-1/3 max-sm:mb-4 max-sm:w-full max-lg:w-full max-lg:mb-32">
+          <img src="image/image5-1.png"
+            class="absolute h-image-scene-5 top-image left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 max-xl:h-image-scene-5-adaptive max-xl:top-image-adaptive max-lg:h-last-image-lg max-sm:h-last-image-sm max-sm:-top-0"
+            id="last-image">
+          <div
+            class="absolute top-shadow-y left-shadow-x opacity-50 h-3 w-72 blur-lg rotate-3 bg-black z-0 max-xl:hidden">
+          </div>
+        </div>
+        <div class="h-full w-1/2 flex flex-col justify-center max-lg:w-2/3 max-lg:items-center">
+          <div
+            class="text-white z-20 mb-14 font-semibold text-6xl max-xl:text-5xl leading-35 max-lg:text-4xl max-lg:text-center max-lg:w-full max-sm:text-3xl">
+            Download Our <br> App Now
+          </div>
+          <div class="text-white z-20 mb-14 font-normal text-2xl mr-36 max-xl:text-xl max-lg:text-justify max-lg:mr-0">
+            Please feel free to download out app on the app
+            store or google play store to evaluate our product
+          </div>
+          <div class="flex max-sm:flex-col">
+            <img src="./image/apple.png"
+              class="h-16 max-xl:h-12 mr-5 cursor-pointer z-20 max-sm:h-12 max-sm:mr-0 max-sm:mb-5">
+            <img src="./image/google.png" class="h-16 max-xl:h-12 cursor-pointer z-20 max-sm:h-12">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="h-screen-50 max-xl:max-h-footer w-4/5 bg-slate-00 flex flex-col justify-between max-h-footer max-lg:max-h-footer-adaptive max-lg:min-h-footer-adaptive max-sm:max-h-footer-sm max-sm:min-h-footer-sm">
+      <div class="w-full h-4/5 flex max-lg:flex-col">
+        <div
+          class="w-1/3 flex flex-col items-start max-lg:w-full max-lg:justify-center max-lg:items-center max-lg:text-center max-lg:mb-10">
+          <div
+            class="flex justify-start items-center w-1/6 mb-10 cursor-pointer max-sm:h-full max-sm:w-full max-lg:items-center max-lg:justify-center">
+            <div
+              class="text-4xl font-bold justify-center items-center flex rounded-full h-16 w-16 min-w-16 text-white mr-2 bg-black">
+              B</div>
+            <div class="text-2xl font-semibold"> Bankai</div>
+          </div>
+          <div class="text-slate-400 text-cards font-medium text-lg mb-10">
+            Fully featured mobile banking app that can easly be
+            customized to reflect your own business brand
+          </div>
+          <div class="text-slate-400 text-cards font-medium text-lg">
+            Copyright © 2020 - 2024 First Boulevard.
+            All rights reserved.
+          </div>
+        </div>
+        <div class="w-2/3 flex justify-between ml-20 max-lg:ml-0 max-lg:w-full max-lg:mt-10 max-sm:hidden">
+          <div class="flex flex-col w-1/5">
+            <div class="text-black text-cards font-semibold text-xl mb-10">
+              About Us
+            </div>
+            <ul class="text-slate-400 text-cards font-medium text-lg cursor-pointer">
+              <li class="mb-3 hover:text-black transition-all duration-300">Project</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Track Record</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Pricing</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Services</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Professional Worker</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col w-1/5">
+            <div class="text-black text-cards font-semibold text-xl mb-10">
+              Pricing
+            </div>
+            <ul class="text-slate-400 text-cards font-medium text-lg cursor-pointer">
+              <li class="mb-3 hover:text-black transition-all duration-300">About Product</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Management</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col w-1/5">
+            <div class="text-black text-cards font-semibold text-xl mb-10">
+              Media
+            </div>
+            <ul class="text-slate-400 text-cards font-medium text-lg cursor-pointer">
+              <li class="mb-3 hover:text-black transition-all duration-300">Privacy Police</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Development</li>
+              <li class="mb-3 hover:text-black transition-all duration-300">Terms & Service</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col w-1/5">
+            <div class="text-black text-cards font-semibold text-xl mb-10">
+              Contact
+            </div>
+            <ul class="text-slate-400 text-cards font-medium text-lg cursor-pointer">
+              <li class="mb-3 hover:text-black transition-all duration-300">(077) 092 33 53</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div
+        class="w-full h-1/5 flex justify-center items-center text-center text-slate-400 text-cards font-medium text-lg max-sm:hidden">
+        By using this website, you understand the information being presented is provided for informational purposes
+        only
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
